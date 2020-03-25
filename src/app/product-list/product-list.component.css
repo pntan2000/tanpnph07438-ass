@@ -1,0 +1,10 @@
+.price{
+  color:#e10c00;
+}
+a{
+  text-decoration: none;
+  color:#333;
+}
+a:hover{
+  color:rgb(7, 127, 207);
+}

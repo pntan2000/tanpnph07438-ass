@@ -2,5 +2,7 @@ export class Product{
   id:number;
   name: string;
   price: number;
-  desc: string
+  desc: string;
+  category: string;
+  img: string
 }

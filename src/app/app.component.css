@@ -1,3 +1,19 @@
 p {
   font-family: Lato;
 }
+.bg-light {
+    background-color: #65509e!important;
+}
+.navbar-light .navbar-brand {
+    color: #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+.bg-dark {
+    background-color: rgb(139, 137, 137)!important;
+}
+.btn-outline-success {
+    color: antiquewhite;
+    border-color: antiquewhite;
+}
