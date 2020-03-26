@@ -28,11 +28,7 @@ p {
  margin-right: 15px;
 }
     #addPBtop {
-            margin: 0px 26px 0 0;
-            position: fixed;
-            top: 60px;
-            right: 0;
-            display: inline;
+            margin-left: 10px;
         }
 
         #addPBtop > i {
@@ -51,30 +47,6 @@ p {
             z-index: 5;
         }
 
-        #addPBtop > i:hover {
+        #addPBtop :hover {
             background-color: #F0F0F0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
-            border: 1px solid #DADCE0;
-        }
-
-        #addPBtop > div {
-            width: 0;
-            height: 50px;
-            background-color: #E8F0FE;
-            border-radius: 50px;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            overflow: hidden;
-            padding: 0 60px 0 15px;
-            opacity: 0;
-            transition: 0.3s;
-        }
-
-        #addPBtop > div > label {
-            color: var(--color-text-hr);
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            display: block;
-            width: 240px;
         }
