@@ -65,7 +65,7 @@
 
 	</div>
 	<!-- /.container -->
-
+<form>
 <div class="modal fade"id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -78,10 +78,10 @@
                         <div class="modal-body">
                             <form id="form-add-user">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="username" required="" placeholder=" Name *" />
+                                    <input type="text" class="form-control" id="username" required="" placeholder=" Name *" [(ngModel)]="user.username" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="password" required="" placeholder=" Password *" />
+                                    <input type="password" class="form-control" id="password" required="" placeholder=" Password *" [(ngModel)]="user.password"/>
                                 </div>
                                 <div class="form-group text-right">
                                     <a href="" class="text-info text-decoration-none">Forgot password?</a>
@@ -89,12 +89,12 @@
                             </form>
                         </div>
                     <div class="modal-footer border-top-0">
-                        <button type="button" class="btn w-100 text-white py-2" id="add-product" style="background-color: #1ab169;">Login</button>
+                        <button type="button" class="btn w-100 text-white py-2" id="add-product" style="background-color: #1ab169;" (click)="login()">Login</button>
                     </div>
                 </div>
             </div>
           </div>
-
+</form>
 	<!-- Footer -->
 	<footer class="py-5 bg-dark">
 		<div class="container">

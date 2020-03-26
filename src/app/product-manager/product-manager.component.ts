@@ -28,9 +28,6 @@ getProducts(){
 
 removeItem(id){
   this.products = this.productService.removeProduct(id);
-  if(id == this.selected.id){
-    this.closeDetail();
-  }
 }
 
 
