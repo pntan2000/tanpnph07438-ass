@@ -16,12 +16,6 @@ export class ProductManagerComponent implements OnInit {
   ngOnInit():void {
     this.getProducts();
   }
-
-selected: Product;
-showDetail(product){
-  console.log(product);
-  this.selected = product;
-}
 getProducts(){
     this.productService.getProducts().subscribe(response => this.products = response, error => console.log(error));
 }

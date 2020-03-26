@@ -7,7 +7,7 @@ import { User } from './User';
 @Injectable()
 export class ProductService {
   api = 'https://5e7b1a7f0e04630016332aa8.mockapi.io';
-  products: Product;
+  products: Product[];
   users: Observable<User[]>;
   constructor(
     private http: HttpClient
@@ -19,9 +19,11 @@ export class ProductService {
     return this.http.get<Product>(`${this.api}/Product/${id}`);
   }
   getUser(): Observable<User[]>{
+    this.users = this.http.get<User[]>(`${this.api}/User`);
     return this.http.get<User[]>(`${this.api}/User`);
   }
   login(user){
+    
   }
   removeProduct(id){
     return this.products = this.products.filter(product => product.id != id);
