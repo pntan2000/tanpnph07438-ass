@@ -1,0 +1,15 @@
+
+.mota {width: 300px; padding-top: 10px; padding-left: 30px;}
+h4{
+  color: #e10c00;
+}
+
+.btn-index{width:45px;height:40px;margin-right: 10px;border:none;display:inline-block;background-color: gray; color: white;margin-top: 10px; margin-bottom: 20px; border-radius: 5px;}
+.btn-index:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); background-color: gray;}
+#soluong{width: 50px; height:40px;border:1px solid lightgray;text-align: center; font-size: 15px;padding-bottom: 5px; padding-top: 3px; border-radius: 5px;margin-right: 10px;}
+#soluong::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.btn-warning{
+  margin-right: 10px;
+}

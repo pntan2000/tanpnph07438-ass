@@ -1,22 +1,29 @@
+            <div>
+              <a href="index.jsp">Trang chủ</a> &#62;
+              <a href="dohandmade.jsp">Điện thoại</a> &#62;
+              <a href="sanphamchitiet.jsp">{{product.category}}</a>
+          </div><br/>
 
-          <h2>
-            Information 
-            
-          </h2>
-          
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Product Name</th>
-              <th>Price</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>{{product.id}}</td>
-              <td>{{product.name}}</td>
-              <td>{{product.price}}</td>
-              <td>{{product.desc}}</td>
-            </tr>
-          </thead>
+          <h2> {{product.name}} </h2>
+          <hr/>
+          <table>
+            <th>
+                <div><img width="300" src="{{product.img}}"/></div>
+            </th>
+            <th class="mota" valign="top">
+                <div>
+                  <h4>{{product.price}}₫</h4>
+                  <button class="btn-index">-</button>
+							    <input type="number" min="1" value="1" id="soluong"/>
+							    <button class="btn-index">+</button><br>
+                  <button type="button" class="btn btn-warning">Buy now</button>
+                  <button type="button" class="btn btn-warning">Add to Cart</button>
+                </div>
+            </th>
         </table>
+        <div>
+          <br/><br/><br/>
+          <h6>
+          {{product.desc}}
+          </h6>
+        </div>

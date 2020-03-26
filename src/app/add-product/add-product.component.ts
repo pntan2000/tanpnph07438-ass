@@ -18,19 +18,4 @@ export class AddProductComponent implements OnInit {
   addProduct(){
     this.productService.addProduct(this.product);
   }
-  loadImage(val) {
-        var img = val.parentElement.children[0].children[0];
-        var ina = val.parentElement.children[2];
-        var file = val.files[0];
-        var reader = new FileReader();
-
-        reader.addEventListener("load", function () {
-            img.src = reader.result;
-            ina.value = reader.result;
-        }, false);
-
-        if (file) {
-            reader.readAsDataURL(file);
-        }
-    }
 }

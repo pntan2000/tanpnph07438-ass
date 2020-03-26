@@ -1,77 +1,86 @@
 <!DOCTYPE html>
-	<html lang="en">
+<html lang="en">
 
-	<head>
+<head>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-		<title>Shop Homepage - Start Bootstrap Template</title>
+	<title>Shop Homepage - Start Bootstrap Template</title>
 
-		<!-- Bootstrap core CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- Custom styles for this template -->
-		<link href="css/shop-homepage.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/shop-homepage.css" rel="stylesheet">
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/home">Abc Shop</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" routerLink="/home">Abc Shop</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/product/manager" routerLinkActive="active">Manager</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/service" routerLinkActive="active">Service</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" routerLink="/product/manager" routerLinkActive="active">Manager</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" routerLink="/service" routerLinkActive="active">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+					</li>
+				</ul>
+				<a class="nav-cart" routerLink="#"><i class="fas fa-cart-plus"></i></a>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<div id="addPBtop">
+          <i class="fas fa-sign-in-alt"></i>
+          <div>
+        <label>Login</label>
+    </div>
+</div>
+			</div>
+		</div>
+	</nav>
 
-		<!-- Page Content -->
+	<!-- Page Content -->
+	<div class="container">
+
+		<router-outlet></router-outlet>
+		<!-- /.col-lg-9 -->
+
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
 		<div class="container">
-
-			<router-outlet></router-outlet>
-			<!-- /.col-lg-9 -->
-
-			<!-- /.row -->
-
+			<p class="m-0 text-center text-white">Copyright &copy; ABC SHOP</p>
 		</div>
 		<!-- /.container -->
+	</footer>
 
-		<!-- Footer -->
-		<footer class="py-5 bg-dark">
-			<div class="container">
-				<p class="m-0 text-center text-white">Copyright &copy; ABC SHOP</p>
-			</div>
-			<!-- /.container -->
-		</footer>
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
-	</body>
-
-	</html>
+</html>
