@@ -19,10 +19,11 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
 import { OrderManagerComponent } from './order-manager/order-manager.component';
+import { ProductManagerEditComponent } from './product-manager-edit/product-manager-edit.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, SlideComponent, CategoryComponent, ProductManagerComponent, ProductDetailComponent, AddProductComponent, HomeComponent, AboutComponent, NotFoundComponent, LoginComponent, OrderManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, SlideComponent, CategoryComponent, ProductManagerComponent, ProductDetailComponent, AddProductComponent, HomeComponent, AboutComponent, NotFoundComponent, LoginComponent, OrderManagerComponent, ProductManagerEditComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
