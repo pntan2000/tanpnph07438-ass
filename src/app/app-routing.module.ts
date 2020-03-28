@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddProductComponent } from './add-product/add-product.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { OrderManagerComponent } from './order-manager/order-manager.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { MailComponent } from './mail/mail.component';
+import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'home', pathMatch:'full'},
-  { path: 'product/add', component: AddProductComponent},
+  { path: 'product/list', component: ProductListComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'mailus', component: MailComponent},
   { path: 'home', component: HomeComponent},
+  { path: 'page', component: PageComponent},
   { path: 'manager/product', component: ProductManagerComponent},
-  { path: 'manager/order', component: OrderManagerComponent},
-  { path: 'product/detail/:id', component: ProductDetailComponent},
   { path: '404', component: NotFoundComponent},
   { path: '**', redirectTo:'/404', pathMatch:'full'},
 ];

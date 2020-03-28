@@ -1,44 +1,45 @@
 <div class="row">
 	<div class="col-lg-3">
-    <br/><br/>
-    <h2>Category</h2>
-          <div class="list-group">
-            <a href="#" class="list-group-item">Iphone</a>
-            <a href="#" class="list-group-item">Samsung</a>
-            <a href="#" class="list-group-item">Oppo</a>
-            <a href="#" class="list-group-item">Xiaomi</a>
-          </div>
+		<br/><br/>
+		<h2>Category</h2>
+		<div class="list-group">
+			<a href="#" class="list-group-item">Iphone</a>
+			<a href="#" class="list-group-item">Samsung</a>
+			<a href="#" class="list-group-item">Oppo</a>
+			<a href="#" class="list-group-item">Xiaomi</a>
+		</div>
 
 	</div>
 	<!-- /.col-lg-3 -->
 
 	<div class="col-lg-9">
 
-<h2 class="d-flex mb-3 pt-5 justify-content-between">
-  Manager Product
-  <button class="btn btn-primary" routerLink="/product/add">Add Product</button>
-</h2>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th></th>
-              <th>Product Name</th>
-              <th>Price</th>
-              <th>Action</th>
-            </tr>
-            <tr *ngFor="let product of products; index as i">
-              <td>{{i+1}}</td>
-              <td width="100"><img  class="card-img-top" src="{{product.img}}" alt=""></td>
-              <td>{{product.name}}</td>
-              <td>{{product.price}} đ</td>
-              <td width="200">
-              <button class="btn btn-primary" data-toggle="modal" (click)="showdetail(product)" data-target="#exampleModal">Edit</button>
-              <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
-            </tr>
-          </thead>
-        </table><br/>
-<div class="modal fade"id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <app-product-manager-edit [data]="selected"></app-product-manager-edit>
-</div>
+		<h2 class="d-flex mb-3 pt-5 justify-content-between">
+			Manager Product
+			<button class="btn btn-primary" routerLink="/product/add">Add Product</button>
+		</h2>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th></th>
+					<th>Product Name</th>
+					<th>Price</th>
+					<th>Action</th>
+				</tr>
+				<tr *ngFor="let product of products; index as i">
+					<td>{{i+1}}</td>
+					<td width="100"><img  class="card-img-top" src="{{product.img}}" alt=""></td>
+					<td>{{product.name}}</td>
+					<td>{{product.price}} đ</td>
+					<td width="200">
+						<button class="btn btn-primary" data-toggle="modal" (click)="showdetail(product)" data-target="#exampleModal">Edit</button>
+						<button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button></td>
+				</tr>
+			</thead>
+		</table><br/>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<app-product-manager-edit [data]="selected"></app-product-manager-edit>
+		</div>
 	</div>

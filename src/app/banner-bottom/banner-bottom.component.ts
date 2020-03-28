@@ -11,5 +11,5 @@ export class BannerBottomComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  index = ["true","true","false"];
 }

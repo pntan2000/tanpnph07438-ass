@@ -33,6 +33,7 @@
               "src/app/css/style.css"
             ],
             "scripts": [
+              "/node_modules/jquery/dist/jquery.min.js",
               "src/app/js/bootstrap-3.1.1.min.js",
               "src/app/js/easyResponsiveTabs.js",
               "src/app/js/imagezoom.js",
@@ -40,7 +41,7 @@
               "src/app/js/jquery.flexisel.js",
               "src/app/js/jquery.flexslider.js",
               "src/app/js/jquery.magnific-popup.js",
-              "src/app/js/jquery.min.js",
+              
               "src/app/js/jquery.wmuSlider.js",
               "src/app/js/minicart.js",
               "src/app/js/script.js"

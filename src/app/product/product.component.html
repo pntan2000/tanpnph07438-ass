@@ -1,15 +1,49 @@
-<div>
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="https://dummyimage.com/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+
+<div class="w3ls_mobiles_grid_right_grid2">
+	<div class="w3ls_mobiles_grid_right_grid2_left">
+		<h3>Showing Results: 0-1</h3>
+	</div>
+	<div class="w3ls_mobiles_grid_right_grid2_right">
+		<select name="select_item" class="select_item">
+								<option selected="selected">Default sorting</option>
+								<option>Sort by popularity</option>
+								<option>Sort by average rating</option>
+								<option>Sort by newness</option>
+								<option>Sort by price: low to high</option>
+								<option>Sort by price: high to low</option>
+							</select>
+	</div>
+	<div class="clearfix"> </div><br/>
+	<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles"
+		*ngFor="let product of products;index as i">
+		<div class="agile_ecommerce_tab_left mobiles_grid">
+			<div class="hs-wrapper hs-wrapper2">
+				<img src="{{product.img}}" alt=" " class="img-responsive"/>
+				<img src="https://img.techpowerup.org/200328/3.jpg" alt=" " class="img-responsive" />
+				<img src="https://img.techpowerup.org/200328/4.jpg" alt=" " class="img-responsive" />
+				<img src="https://img.techpowerup.org/200328/5.jpg" alt=" " class="img-responsive" />
+				<img src="https://img.techpowerup.org/200328/6.jpg" alt=" " class="img-responsive" />
+				<div class="w3_hs_bottom w3_hs_bottom_sub1">
+					<ul>
+						<li>
+							<a href="#" data-toggle="modal"
+								data-target="#myModal9"><span class="far fa-eye" aria-hidden="true"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h5><a href="single.html">{{product.name}}</a></h5>
+			<div class="simpleCart_shelfItem">
+				<p><i class="item_price">${{product.price}}</i></p>
+				<form action="#" method="post">
+					<input type="hidden" name="cmd" value="_cart" />
+					<input type="hidden" name="add" value="1" />
+					<input type="hidden" name="w3ls_item" value="Wireless Phone" />
+					<input type="hidden" name="amount" value="210.00"/>
+					<button type="submit" class="w3ls-cart">Add to cart</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
