@@ -1,42 +1,9 @@
-p {
-  font-family: Lato;
+.slider{
+  position: absolute; width: 100%; opacity: 0;
 }
-.bg-light {
-    background-color: #65509e!important;
+.fa-user{
+  margin-top: 15px;
 }
-.navbar-light .navbar-brand {
-    color: #f8f9fa;
+.fa-youtube-square{
+  font-size: 80px;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: #f8f9fa;
-}
-.nav-cart{
-  color: #f8f9fa;
-}
-.nav-cart:hover{
-  color: #e6fcf5;
-}
-.bg-dark {
-    background-color: rgb(139, 137, 137)!important;
-}
-.btn-outline-success {
-    margin-right: 10px;
-    color: antiquewhite;
-    border-color: antiquewhite;
-}
-.btn-outline-success:hover {
-   background-color: #fff;
-   color: black;
-}
-.fa-cart-plus{
- font-size: 30px;
- margin-right: 15px;
-}
-
-        #addPBtop{
-          color: #e6fcf5;
-        }
-
-        #addPBtop :hover {
-            color: #fff;
-        }

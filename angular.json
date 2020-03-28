@@ -23,9 +23,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/assets/bootstrap.css",
+              "src/app/assets/fasthover.css",
+              "src/app/assets/flexindex.css",
+              "src/app/assets/font-awesome.css",
+              "src/app/assets/jquery.countdown.css",
+              "src/app/assets/popuo-box.css",
+              "src/app/assets/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/assets/bootstrap-3.1.1.min.js",
+              "src/app/assets/easyResponsiveTabs.js",
+              "src/app/assets/imagezoom.js",
+              "src/app/assets/jquery.countdount.js",
+              "src/app/assets/jquery.flexisel.js",
+              "src/app/assets/jquery.flexslider.js",
+              "src/app/assets/jquery.magnific-popup.js",
+              "src/app/assets/jquery.min.js",
+              "src/app/assets/jquery.wmuSlider.js",
+              "src/app/assets/minicart.js",
+              "src/app/assets/script.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,9 +91,28 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css"
+              "styles.css",
+              "src/app/assets/bootstrap.css",
+              "src/app/assets/fasthover.css",
+              "src/app/assets/flexindex.css",
+              "src/app/assets/font-awesome.css",
+              "src/app/assets/jquery.countdown.css",
+              "src/app/assets/popuo-box.css",
+              "src/app/assets/style.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/app/assets/bootstrap-3.1.1.min.js",
+              "src/app/assets/easyResponsiveTabs.js",
+              "src/app/assets/imagezoom.js",
+              "src/app/assets/jquery.countdount.js",
+              "src/app/assets/jquery.flexisel.js",
+              "src/app/assets/jquery.flexslider.js",
+              "src/app/assets/jquery.magnific-popup.js",
+              "src/app/assets/jquery.min.js",
+              "src/app/assets/jquery.wmuSlider.js",
+              "src/app/assets/minicart.js",
+              "src/app/assets/script.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
