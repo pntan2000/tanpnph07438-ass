@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule }  from '@angular/common/http'
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -22,7 +23,7 @@ import { PageComponent } from './page/page.component';
 import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, NgbModule ],
   declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, CategoryComponent, ProductManagerComponent, HomeComponent, AboutComponent, NotFoundComponent, ProductManagerEditComponent,  BannerBottomComponent, NewProductComponent, MailComponent, PageComponent, AdminComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
