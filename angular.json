@@ -24,26 +24,26 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/app/assets/bootstrap.css",
-              "src/app/assets/fasthover.css",
-              "src/app/assets/flexindex.css",
-              "src/app/assets/font-awesome.css",
-              "src/app/assets/jquery.countdown.css",
-              "src/app/assets/popuo-box.css",
-              "src/app/assets/style.css"
+              "src/app/css/bootstrap.css",
+              "src/app/css/fasthover.css",
+              "src/app/css/flexindex.css",
+              "src/app/css/font-awesome.css",
+              "src/app/css/jquery.countdown.css",
+              "src/app/css/popuo-box.css",
+              "src/app/css/style.css"
             ],
             "scripts": [
-              "src/app/assets/bootstrap-3.1.1.min.js",
-              "src/app/assets/easyResponsiveTabs.js",
-              "src/app/assets/imagezoom.js",
-              "src/app/assets/jquery.countdount.js",
-              "src/app/assets/jquery.flexisel.js",
-              "src/app/assets/jquery.flexslider.js",
-              "src/app/assets/jquery.magnific-popup.js",
-              "src/app/assets/jquery.min.js",
-              "src/app/assets/jquery.wmuSlider.js",
-              "src/app/assets/minicart.js",
-              "src/app/assets/script.js"
+              "src/app/js/bootstrap-3.1.1.min.js",
+              "src/app/js/easyResponsiveTabs.js",
+              "src/app/js/imagezoom.js",
+              "src/app/js/jquery.countdown.js",
+              "src/app/js/jquery.flexisel.js",
+              "src/app/js/jquery.flexslider.js",
+              "src/app/js/jquery.magnific-popup.js",
+              "src/app/js/jquery.min.js",
+              "src/app/js/jquery.wmuSlider.js",
+              "src/app/js/minicart.js",
+              "src/app/js/script.js"
             ]
           },
           "configurations": {
@@ -92,26 +92,25 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "styles.css",
-              "src/app/assets/bootstrap.css",
-              "src/app/assets/fasthover.css",
-              "src/app/assets/flexindex.css",
-              "src/app/assets/font-awesome.css",
-              "src/app/assets/jquery.countdown.css",
-              "src/app/assets/popuo-box.css",
-              "src/app/assets/style.css"
+              "app/css/bootstrap.css",
+              "app/css/fasthover.css",
+              "app/css/flexslider.css",
+              "app/css/font-awesome.css",
+              "app/css/jquery.countdown.css",
+              "app/css/popuo-box.css",
+              "app/css/style.css"
             ],
             "scripts": [
-              "src/app/assets/bootstrap-3.1.1.min.js",
-              "src/app/assets/easyResponsiveTabs.js",
-              "src/app/assets/imagezoom.js",
-              "src/app/assets/jquery.countdount.js",
-              "src/app/assets/jquery.flexisel.js",
-              "src/app/assets/jquery.flexslider.js",
-              "src/app/assets/jquery.magnific-popup.js",
-              "src/app/assets/jquery.min.js",
-              "src/app/assets/jquery.wmuSlider.js",
-              "src/app/assets/minicart.js",
-              "src/app/assets/script.js"
+              "app/js/easyResponsiveTabs.js",
+              "app/js/imagezoom.js",
+              "app/js/jquery.countdown.js",
+              "app/js/jquery.flexisel.js",
+              "app/js/jquery.flexslider.js",
+              "app/js/jquery.magnific-popup.js",
+              "app/js/jquery.min.js",
+              "app/js/jquery.wmuSlider.js",
+              "app/js/minicart.js",
+              "app/js/script.js"
             ],
             "assets": [
               "src/favicon.ico",

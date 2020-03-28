@@ -854,7 +854,7 @@ li.w3pages .dropdown-menu > li > a:hover{
   display         : block;
   width           : 18px;
   height          : 18px;
-  background      : url(https://img.techpowerup.org/200328/star-.png);
+  background      : url(https://img.techpowerup.org/200328/star931.png);
   background-size : contain;
   opacity         : 0;
   transition      : opacity 0.2s linear;
@@ -1575,7 +1575,7 @@ h3.other-nw {
 }
 .entypo-facebook:before {
     content: " ";
-    background: url(https://img.techpowerup.org/200328s/img-sp.png) no-repeat 7px -125px;
+    background: url(https://img.techpowerup.org/200328/img-sp.png) no-repeat 7px -125px;
     display: block;
     width: 3em;
     height: 3em;
