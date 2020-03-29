@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  selector: 'app-market',
+  templateUrl: './market.component.html',
+  styleUrls: ['./market.component.css']
 })
-export class AppComponent  {
-  name = 'Angular';
+export class MarketComponent implements OnInit {
 
   constructor(private modalService: NgbModal) {}
 
-  open(content) {
+  ngOnInit() {
+  }
+ open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
     }, (reason) => {
     });

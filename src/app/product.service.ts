@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from './Product';
+import { Order } from './Order';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { User } from './User';
@@ -15,6 +16,10 @@ export class ProductService {
   getProducts(): Observable<Product[]>{
       return this.http.get<Product[]>(`${this.api}/Product`);
   }
+  getOrders(): Observable<Order[]>{
+      return this.http.get<Order[]>(`${this.api}/Order`);
+  }
+
   getProductDetail(id): Observable<Product>{
     return this.http.get<Product>(`${this.api}/Product/${id}`);
   }

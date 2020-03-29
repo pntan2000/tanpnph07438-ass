@@ -1,9 +1,9 @@
-export class Product{
+export class Order{
   id:number;
   name: string;
   price: number;
-  desc: string;
-  category: string;
+  status: string;
+  adress: string;
   img: string;
   amount:number
 }

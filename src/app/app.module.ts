@@ -21,10 +21,14 @@ import { NewProductComponent } from './new-product/new-product.component';
 import { MailComponent } from './mail/mail.component';
 import { PageComponent } from './page/page.component';
 import { AdminComponent } from './admin/admin.component';
+import { MarketComponent } from './market/market.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { OrderComponent } from './order/order.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, NgbModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, CategoryComponent, ProductManagerComponent, HomeComponent, AboutComponent, NotFoundComponent, ProductManagerEditComponent,  BannerBottomComponent, NewProductComponent, MailComponent, PageComponent, AdminComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, CategoryComponent, ProductManagerComponent, HomeComponent, AboutComponent, NotFoundComponent, ProductManagerEditComponent,  BannerBottomComponent, NewProductComponent, MailComponent, PageComponent, AdminComponent, MarketComponent, AddProductComponent, OrderComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

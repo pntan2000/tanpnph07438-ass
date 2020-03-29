@@ -7,7 +7,7 @@ import {Product} from "../Product";
   styleUrls: ['./product-manager-edit.component.css']
 })
 export class ProductManagerEditComponent implements OnInit {
-
+  product = new Product();
   constructor() { }
   @Input('data')product:Product;
   ngOnInit() {

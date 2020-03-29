@@ -8,7 +8,9 @@ import { ProductService } from "../product.service";
   styleUrls: ['./product-manager.component.css']
 })
 export class ProductManagerComponent implements OnInit {
-  products:Product[];
+  items:Product[];
+  page = 1;
+  pageSize = 10;
   constructor(
      private productService:ProductService
   ) { }
@@ -22,7 +24,7 @@ this.selected= product;
 }
 
 getProducts(){
-    this.productService.getProducts().subscribe(response => this.products = response, error => console.log(error));
+    this.productService.getProducts().subscribe(response => this.items = response, error => console.log(error));
 }
 
 removeItem(id){
